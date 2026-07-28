@@ -62,6 +62,7 @@ pub struct App {
     // ── Library data ──────────────────────────────────────────────────────────
     albums: Vec<Album>,
     albums_scroll: f32,
+    albums_sort: types::AlbumsSort,
     home_recent: Vec<Album>,
     home_newest: Vec<Album>,
     home_random: Vec<Album>,
@@ -294,6 +295,7 @@ impl App {
             forward_stack: Vec::new(),
             albums: Vec::new(),
             albums_scroll: 0.0,
+            albums_sort: types::AlbumsSort::Newest,
             home_recent: Vec::new(),
             home_newest: Vec::new(),
             home_random: Vec::new(),
